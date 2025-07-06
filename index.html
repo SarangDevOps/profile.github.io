@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SARANG T - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #eaeaea;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+      .page {
+        width: 794px; /* A4 width */
+        min-height: 1123px; /* A4 height */
+        margin: auto;
+        background: #fff;
+        padding: 40px 40px 35px;
+        color: #000;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      h1 {
+        font-size: 26px;
+        margin: 0 0 12px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin: 22px 0 8px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+      }
+
+      p,
+      li {
+        margin: 4px 0;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 6px 0 12px;
+      }
+
+      .section {
+        margin-bottom: 22px;
+      }
+
+      .contact {
+        margin-bottom: 28px;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .contact a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .role {
+        font-weight: bold;
+      }
+
+      .location {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 6px;
+      }
+
+      /* Download button */
+      .download-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #000;
+        color: #fff;
+        padding: 10px 16px 10px 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        user-select: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background: #444;
+      }
+
+      /* Animated down arrow */
+      .download-icon {
+        width: 18px;
+        height: 18px;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        animation: slideDown 1.5s infinite ease-in-out;
+      }
+
+      @keyframes slideDown {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(4px);
+        }
+      }
+
+      @media print {
+        @page {
+          size: A4;
+          margin: 15mm;
+        }
+
+        body {
+          background: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .page {
+          box-shadow: none;
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          line-height: 1.4;
+        }
+
+        .download-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="download-btn"
+      onclick="window.print()"
+      aria-label="Download PDF"
+    >
+      <svg
+        class="download-icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M12 3v14M8 13l4 4 4-4" />
+      </svg>
+      Download PDF
+    </button>
+
+    <div class="page">
+      <h1>SARANG T</h1>
+      <div class="contact">
+        <p>Odoo & Python Specialist | ERP Application Developer</p>
+        <p>Kannur, Kerala, India</p>
+        <p>Email: sarang@example.com</p>
+        <p>Mob: +91 9526815422</p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://linkedin.com/in/sarang-t-48691b247"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/sarang-t-48691b247
+          </a>
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Professional Summary</h2>
+        <p>
+          Skilled Odoo Developer specializing in customizing and optimizing ERP
+          solutions. Proficient in Python, JavaScript, SQL, and API integration.
+          Experienced in financial modules, system automation, and improving
+          organizational efficiency through tailored ERP solutions.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Odoo Development (v12–v16)</li>
+          <li>Python, JavaScript, SQL</li>
+          <li>ERP Workflow Automation</li>
+          <li>QWeb, HTML, CSS</li>
+          <li>API Integration (RESTful)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Professional Experience</h2>
+
+        <p class="role">Odoo Developer – Inexoft Technologies Pvt Ltd</p>
+        <p class="location">Aug 2024 – Present | Kannur, Kerala</p>
+        <ul>
+          <li>Customized ERP modules to match business requirements.</li>
+          <li>
+            Developed financial workflows and automated reporting features.
+          </li>
+          <li>Integrated third-party APIs to enhance system functionality.</li>
+        </ul>
+
+        <p class="role">
+          Odoo Developer Intern – Business Technology Research & Analytics
+          Centre
+        </p>
+        <p class="location">Mar 2024 – Sep 2024 | Kannur, Kerala</p>
+        <ul>
+          <li>Documented software modules and workflows.</li>
+          <li>Contributed to Odoo module customization and testing.</li>
+        </ul>
+
+        <p class="role">Technical Apprentice – Keltron Component Complex Ltd</p>
+        <p class="location">Nov 2022 – Nov 2023 | Dharmasala, Kannur</p>
+        <ul>
+          <li>Operated low/high voltage forming machinery in etching plant.</li>
+          <li>
+            Maintained de-ionized water systems and basic electronics in the
+            plant.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p class="role">
+          Diploma in Electronics & Communication Engineering – EKNMMPTC
+        </p>
+        <p class="location">2019 – 2020 | First Class</p>
+
+        <p class="role">
+          Higher Secondary (Biology Science) – EMSSGHSS Pappinisseri
+        </p>
+        <p class="location">2017 – 2019</p>
+      </div>
+
+      <div class="section">
+        <h2>Certificates</h2>
+        <ul>
+          <li>
+            Industrial Training on Optical Fiber Technology and FTTH, BSNL
+            Regional Telecom Training Center TVM
+          </li>
+          <li>
+            Geospatial Application for Disaster Risk Management - Basic &
+            Advanced Module (Massive Open Online Course)
+          </li>
+          <li>Prompt Engineering Workshop</li>
+          <li>Student Police Cadet Certificate</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Languages</h2>
+        <ul>
+          <li>English – Professional Proficiency</li>
+          <li>Malayalam – Native</li>
+          <li>Hindi – Conversational</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Volunteer Experience</h2>
+        <p class="role">Student Police Cadet</p>
+        <p class="location">Jul 2015 – Apr 2016</p>
+        <p>
+          Trained in leadership, civic engagement, and community policing
+          principles.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
